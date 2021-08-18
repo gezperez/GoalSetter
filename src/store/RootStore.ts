@@ -21,7 +21,7 @@ export class RootStore {
   async init(): Promise<void> {
     try {
       await task(this.hydrateStores())
-    } catch (err) {
+    } catch {
       // TODO: Log error
     } finally {
       this.initialized = true
@@ -32,7 +32,7 @@ export class RootStore {
   async hydrateStores(): Promise<void> {
     try {
       await task(hydrate('auth-store', this.authStore))
-    } catch (err) {
+    } catch {
       // TODO: Log error
     }
   }

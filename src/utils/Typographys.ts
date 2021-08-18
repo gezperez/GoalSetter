@@ -2,14 +2,14 @@ import { StyleSheet, TextStyle } from 'react-native'
 
 import Colors from './Colors'
 
-type Typography = {
+type Typographys = {
   headerTitle: TextStyle
   headerSubtitle: TextStyle
 }
 
-const typographyObject: Typography = {
+const typographyObject: Typographys = {
   headerTitle: {
-    fontFamily: 'Avenir-Light',
+    fontFamily: 'Avenir-Book',
     fontWeight: '900',
     fontSize: 20,
     lineHeight: 23,
@@ -24,8 +24,6 @@ const typographyObject: Typography = {
   },
 }
 
-type Styles = Typography
-
-const Typography = StyleSheet.create<Styles>(typographyObject)
+const Typography = StyleSheet.create<Typographys>(typographyObject)
 
 export default Typography
