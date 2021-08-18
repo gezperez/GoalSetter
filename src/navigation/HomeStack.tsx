@@ -6,7 +6,7 @@ import { HomeScreen } from '~/screens'
 const Stack = createStackNavigator()
 
 const HomeStack = () => (
-  <Stack.Navigator>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Home" component={HomeScreen} />
   </Stack.Navigator>
 )
