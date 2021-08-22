@@ -7,26 +7,26 @@ import { useStore } from '~/store'
 import AuthStack from './AuthStack'
 import HomeStack from './HomeStack'
 
-const Stack = createStackNavigator()
+const { Navigator, Screen } = createStackNavigator()
 
-const Navigator = () => {
+const AppNavigator = () => {
   const { authStore } = useStore()
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Navigator
         screenOptions={{
           headerShown: false,
         }}
       >
         {authStore.isAuthenticated ? (
-          <Stack.Screen name="HomeStack" component={HomeStack} />
+          <Screen name="HomeStack" component={HomeStack} />
         ) : (
-          <Stack.Screen name="AuthStack" component={AuthStack} />
+          <Screen name="AuthStack" component={AuthStack} />
         )}
-      </Stack.Navigator>
+      </Navigator>
     </NavigationContainer>
   )
 }
 
-export default observer(Navigator)
+export default observer(AppNavigator)

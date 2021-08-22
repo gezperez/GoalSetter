@@ -1,21 +1,14 @@
-import React, { useEffect } from 'react'
-import { observer } from 'mobx-react-lite'
+import React from 'react'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-import Navigator from '~/navigation/Navigator'
-import { useStore } from '~/store'
+import AppNavigator from '~/navigation/AppNavigator'
 
 const App = () => {
-  const store = useStore()
-
-  useEffect(() => {
-    store.init()
-  }, [store])
-
-  if (!store.initialized) {
-    return null
-  }
-
-  return <Navigator />
+  return (
+    <SafeAreaProvider>
+      <AppNavigator />
+    </SafeAreaProvider>
+  )
 }
 
-export default observer(App)
+export default App

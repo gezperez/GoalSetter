@@ -1,6 +1,5 @@
 import { isNil } from 'lodash'
 import { observable } from 'mobx'
-import { persist } from 'mobx-persist'
 
 import { RootStore } from './RootStore'
 
@@ -9,7 +8,6 @@ const token = 'Bearer JWT'
 export class AuthStore {
   store: RootStore
 
-  @persist
   @observable
   accessToken: string | undefined
 

@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomButton should render and support touchable props 1`] = `
+<View
+  accessibilityLabel="button"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#5FBA20",
+      "borderRadius": 5,
+      "justifyContent": "center",
+      "marginHorizontal": 50,
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+  testID="button"
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Bold",
+        "fontSize": 12,
+        "lineHeight": 14,
+      }
+    }
+  >
+    button label
+  </Text>
+</View>
+`;
+
+exports[`CustomButton should render with non required props 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#5FBA20",
+      "borderRadius": 5,
+      "justifyContent": "center",
+      "margin": 15,
+      "marginHorizontal": 50,
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Bold",
+        "fontSize": 12,
+        "lineHeight": 14,
+      }
+    }
+  >
+    button label
+  </Text>
+</View>
+`;
+
+exports[`CustomButton should render with required props 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#5FBA20",
+      "borderRadius": 5,
+      "justifyContent": "center",
+      "marginHorizontal": 50,
+      "opacity": 1,
+      "padding": 20,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Bold",
+        "fontSize": 12,
+        "lineHeight": 14,
+      }
+    }
+  >
+    button label
+  </Text>
+</View>
+`;

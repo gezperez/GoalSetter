@@ -2,42 +2,54 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import I18n from '~/i18n'
+import { Background, Title } from '~/navigation/components'
 import { SignUpScreen, TermsScreen } from '~/screens'
 import { Colors } from '~/utils'
+import GradientBackground from './components/GradientBackground'
 import { RootStackParamList } from './interfaces/navigation'
-import { Header } from './headers'
 
-const Stack = createStackNavigator<RootStackParamList>()
+const { Navigator, Screen } = createStackNavigator<RootStackParamList>()
+
+const signUpHeight = 150
+const termsHeight = 100
 
 const AuthStack = () => (
-  <Stack.Navigator headerMode="screen">
-    <Stack.Screen
+  <Navigator
+    headerMode="screen"
+    screenOptions={{
+      headerTitleStyle: {
+        alignSelf: 'center',
+      },
+      headerTintColor: Colors.WHITE,
+      headerTitleContainerStyle: {
+        left: 0,
+      },
+      headerBackTitleVisible: false,
+    }}
+  >
+    <Screen
       name="SignUp"
       component={SignUpScreen}
-      options={({ navigation }) => ({
-        header: () => (
-          <Header
-            title={I18n.t('signUpHeaderTitle')}
-            subtitle={I18n.t('signUpHeaderSubtitle')}
-            navigation={navigation}
-          />
-        ),
-      })}
+      options={{
+        headerBackground: () => <Background height={signUpHeight} />,
+        headerTitle: () => <Title title={I18n.t('signUpHeaderTitle')} subtitle={I18n.t('signUpHeaderSubtitle')} />,
+        headerStyle: {
+          height: signUpHeight,
+        },
+      }}
     />
-    <Stack.Screen
+    <Screen
       name="Terms"
       component={TermsScreen}
-      options={({ navigation }) => ({
-        header: () => (
-          <Header
-            title={I18n.t('termsHeaderTitle')}
-            navigation={navigation}
-            colors={[Colors.SECONDARY_HEADER_GRADIENT_START, Colors.SECONDARY_HEADER_GRADIENT_END]}
-          />
-        ),
-      })}
+      options={{
+        headerBackground: () => <GradientBackground height={termsHeight} />,
+        headerTitle: () => <Title title={I18n.t('termsHeaderTitle')} />,
+        headerStyle: {
+          height: termsHeight,
+        },
+      }}
     />
-  </Stack.Navigator>
+  </Navigator>
 )
 
 export default AuthStack

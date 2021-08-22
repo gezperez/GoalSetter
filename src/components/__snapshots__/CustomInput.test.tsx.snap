@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomInput should render with required props 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "borderBottomColor": "#D2D2D2",
+      "borderBottomWidth": 0.5,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "space-between",
+      "marginHorizontal": 36,
+      "marginVertical": 16,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/email.png",
+      }
+    }
+    style={
+      Object {
+        "height": 16,
+        "marginRight": 16,
+        "resizeMode": "contain",
+        "width": 16,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      collapsable={false}
+      nativeID="animatedComponent"
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#D8D8D8",
+          "fontFamily": "Montserrat-Bold",
+          "fontSize": 17,
+          "lineHeight": 24,
+          "top": 0,
+        }
+      }
+    >
+      input
+    </Text>
+    <TextInput
+      accessibilityLabel="button label"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "#00B7D5",
+          "fontFamily": "Montserrat-Bold",
+          "fontSize": 19,
+          "left": 0,
+          "lineHeight": 22,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+      testID="button label"
+    />
+  </View>
+</View>
+`;

@@ -5,7 +5,7 @@ import {
   ImageSourcePropType,
   ImageStyle,
   StyleSheet,
-  TextInput as RNTextInput,
+  TextInput,
   TextInputProps,
   TextStyle,
   View,
@@ -22,55 +22,59 @@ export type CustomInputProps = {
   error?: string
 } & TextInputProps
 
-const CustomInput = forwardRef<RNTextInput, CustomInputProps>(({ icon, label, error, value, ...props }, ref) => {
-  const [hasFocus, setHasFocus] = useState(false)
+const CustomInput = forwardRef<TextInput, CustomInputProps>(
+  ({ icon, label, error, accessibilityLabel, testID, value, ...props }, ref) => {
+    const [hasFocus, setHasFocus] = useState(false)
 
-  const animateLabel = hasFocus || size(value) >= 1
+    const animateLabel = hasFocus || size(value) >= 1
 
-  const [interpolate] = useTween(animateLabel, 200)
+    const [interpolate] = useTween(animateLabel, 200)
 
-  const handleBlur = useCallback(() => setHasFocus(false), [])
+    const handleBlur = useCallback(() => setHasFocus(false), [])
 
-  const handleFocus = useCallback(() => setHasFocus(true), [])
+    const handleFocus = useCallback(() => setHasFocus(true), [])
 
-  return (
-    <Animated.View
-      style={[
-        styles.container,
-        {
-          borderBottomColor: hasFocus ? Colors.FOCUSED_BORDER : Colors.BORDER,
-        },
-        error ? styles.error : {},
-      ]}
-    >
-      <Image source={icon} style={styles.image} />
+    return (
+      <Animated.View
+        style={[
+          styles.container,
+          {
+            borderBottomColor: hasFocus ? Colors.FOCUSED_BORDER : Colors.BORDER,
+          },
+          error ? styles.error : {},
+        ]}
+      >
+        <Image source={icon} style={styles.image} />
 
-      <View style={styles.inputContainer}>
-        <Animated.Text
-          numberOfLines={1}
-          style={[
-            styles.label,
-            {
-              top: interpolate(0, -28),
-              fontSize: interpolate(17, 12),
-              lineHeight: interpolate(24, 14),
-            },
-          ]}
-        >
-          {label}
-        </Animated.Text>
-        <RNTextInput
-          ref={ref}
-          style={styles.input}
-          value={value}
-          onBlur={handleBlur}
-          onFocus={handleFocus}
-          {...props}
-        />
-      </View>
-    </Animated.View>
-  )
-})
+        <View style={styles.inputContainer}>
+          <Animated.Text
+            numberOfLines={1}
+            style={[
+              styles.label,
+              {
+                top: interpolate(0, -28),
+                fontSize: interpolate(17, 12),
+                lineHeight: interpolate(24, 14),
+              },
+            ]}
+          >
+            {label}
+          </Animated.Text>
+          <TextInput
+            ref={ref}
+            style={styles.input}
+            value={value}
+            onBlur={handleBlur}
+            onFocus={handleFocus}
+            testID={testID}
+            accessibilityLabel={accessibilityLabel}
+            {...props}
+          />
+        </View>
+      </Animated.View>
+    )
+  }
+)
 
 type Styles = {
   container: ViewStyle

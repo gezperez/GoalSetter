@@ -11,6 +11,7 @@ type Typographys = {
   text: TextStyle
   footer: TextStyle
   footerLink: TextStyle
+  homeTitle: TextStyle
 }
 
 const typographyObject: Typographys = {
@@ -63,6 +64,12 @@ const typographyObject: Typographys = {
     lineHeight: 16,
     color: Colors.LINK,
     textAlign: 'center',
+  },
+  homeTitle: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 20,
+    lineHeight: 24,
+    color: Colors.HOME_TITLE,
   },
 }
 

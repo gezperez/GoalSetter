@@ -15,5 +15,6 @@ module.exports = {
       },
     ],
     '@babel/plugin-transform-runtime',
+    'react-native-reanimated/plugin',
   ],
 }
