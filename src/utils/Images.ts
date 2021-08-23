@@ -1,4 +1,4 @@
-const Illustration = {
+const Image = {
   EMAIL: require('~/assets/images/email.png'),
   LOCK: require('~/assets/images/lock.png'),
   PERSON: require('~/assets/images/person.png'),
@@ -9,11 +9,11 @@ const Illustration = {
 }
 
 export default {
-  EMAIL: Illustration.EMAIL,
-  LOCK: Illustration.LOCK,
-  PERSON: Illustration.PERSON,
-  MONEY_BACKGROUND: Illustration.MONEY_BACKGROUND,
-  FLYING_MONEY: Illustration.FLYING_MONEY,
-  HEADER_BACKGROUND: Illustration.HEADER_BACKGROUND,
-  HOME_ICON: Illustration.HOME_ICON,
+  EMAIL: Image.EMAIL,
+  LOCK: Image.LOCK,
+  PERSON: Image.PERSON,
+  MONEY_BACKGROUND: Image.MONEY_BACKGROUND,
+  FLYING_MONEY: Image.FLYING_MONEY,
+  HEADER_BACKGROUND: Image.HEADER_BACKGROUND,
+  HOME_ICON: Image.HOME_ICON,
 }

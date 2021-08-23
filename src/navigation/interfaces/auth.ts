@@ -12,3 +12,8 @@ export type SignUpScreenProps = {
   route: RouteProp<RootStackParamList, 'SignUp'>
   navigation: StackNavigationProp<RootStackParamList, 'SignUp'>
 }
+
+export type TermsScreenProps = {
+  route: RouteProp<RootStackParamList, 'Terms'>
+  navigation: StackNavigationProp<RootStackParamList, 'Terms'>
+}

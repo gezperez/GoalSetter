@@ -2,10 +2,9 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import I18n from '~/i18n'
-import { Background, Title } from '~/navigation/components'
+import { Background, GradientBackground, Title } from '~/navigation/components'
 import { SignUpScreen, TermsScreen } from '~/screens'
 import { Colors } from '~/utils'
-import GradientBackground from './components/GradientBackground'
 import { RootStackParamList } from './interfaces/navigation'
 
 const { Navigator, Screen } = createStackNavigator<RootStackParamList>()
