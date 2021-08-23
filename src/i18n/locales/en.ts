@@ -5,6 +5,7 @@ export default {
   signUpFooter:
     'By creating this account, I agree that I am a U.S. resident, 18 years or older with a valid bank account. I agree to Goalsetter’s ',
   signUpFooterLink: 'Terms of Services',
+  signUpButton: 'CREATE FREE ACCOUNT',
   termsHeaderTitle: 'Terms of Services',
   terms: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ${'\n'}
 
@@ -22,7 +23,6 @@ export default {
   lastName: 'Last Name',
   emailAddress: 'Email Address',
   password: 'Password',
-  createAccount: 'CREATE FREE ACCOUNT',
   accessibilityLabel: {
     termsButton: 'terms button',
     firstInput: 'firstInput',

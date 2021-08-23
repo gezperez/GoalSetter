@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should render with children prop 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+  testID="container"
+>
+  <RCTScrollView
+    collapsable={false}
+    contentContainerStyle={
+      Array [
+        undefined,
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+  >
+    <View>
+      <View />
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Container should render with required props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+  testID="container"
+>
+  <RCTScrollView
+    collapsable={false}
+    contentContainerStyle={
+      Array [
+        undefined,
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;

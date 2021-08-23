@@ -20,11 +20,11 @@ describe('CustomButton', () => {
   it('should render and support touchable props', () => {
     const mockPressHandler = jest.fn()
 
-    const { toJSON, getByLabelText } = render(
+    const { toJSON, getByA11yLabel } = render(
       <CustomButton label="button label" onPress={mockPressHandler} accessibilityLabel="button" testID="button" />
     )
 
-    fireEvent.press(getByLabelText('button'))
+    fireEvent.press(getByA11yLabel('button'))
 
     expect(mockPressHandler).toBeCalled()
     expect(toJSON()).toMatchSnapshot()

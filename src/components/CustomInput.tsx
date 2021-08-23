@@ -23,7 +23,7 @@ export type CustomInputProps = {
 } & TextInputProps
 
 const CustomInput = forwardRef<TextInput, CustomInputProps>(
-  ({ icon, label, error, accessibilityLabel, testID, value, ...props }, ref) => {
+  ({ icon, label, error, accessibilityLabel, testID, onChangeText, value, ...props }, ref) => {
     const [hasFocus, setHasFocus] = useState(false)
 
     const animateLabel = hasFocus || size(value) >= 1
@@ -68,6 +68,7 @@ const CustomInput = forwardRef<TextInput, CustomInputProps>(
             onFocus={handleFocus}
             testID={testID}
             accessibilityLabel={accessibilityLabel}
+            onChangeText={onChangeText}
             {...props}
           />
         </View>

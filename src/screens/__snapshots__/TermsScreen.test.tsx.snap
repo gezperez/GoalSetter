@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TermsScreen should render with Button component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    contentContainerStyle={
+      Array [
+        undefined,
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+  >
+    <View>
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "height": 45,
+            "justifyContent": "center",
+            "marginVertical": 32,
+            "width": 525,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/money-background.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": 45,
+                "width": 525,
+              },
+              undefined,
+            ]
+          }
+        />
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/flying-money.png",
+            }
+          }
+        />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#000000",
+            "fontFamily": "Montserrat-Light",
+            "fontSize": 14,
+            "lineHeight": 16,
+            "margin": 32,
+          }
+        }
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+
+  1.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.n. .
+  
+  2. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+  3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </Text>
+    </View>
+  </RCTScrollView>
+</View>
+`;

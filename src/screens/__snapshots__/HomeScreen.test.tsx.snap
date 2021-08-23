@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen should render with Button component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    contentContainerStyle={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/home-icon.png",
+            }
+          }
+          style={
+            Object {
+              "height": 155,
+              "width": 167,
+            }
+          }
+        />
+        <Text
+          style={
+            Object {
+              "color": "#3B2F71",
+              "fontFamily": "Montserrat-Bold",
+              "fontSize": 20,
+              "lineHeight": 24,
+              "marginTop": 30,
+            }
+          }
+        >
+          Family banking
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "justifyContent": "space-between",
+            "marginVertical": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "Montserrat-Light",
+              "fontSize": 14,
+              "lineHeight": 16,
+              "marginHorizontal": 16,
+              "textAlign": "center",
+            }
+          }
+        >
+          Linking your bank lets you use all of Goalsetter’s amazing features. Every member of your family can save, gift, learn, earn, and spend money... smartly.
+        </Text>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#5FBA20",
+              "borderRadius": 5,
+              "justifyContent": "center",
+              "marginHorizontal": 50,
+              "opacity": 1,
+              "padding": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Montserrat-Bold",
+                "fontSize": 12,
+                "lineHeight": 14,
+              }
+            }
+          >
+            LINK A BANK
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

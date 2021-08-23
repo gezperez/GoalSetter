@@ -96,7 +96,7 @@ const SignUpScreen = ({ navigation }: SignUpScreenProps) => {
                   <Text>.</Text>
                 </Text>
               </TouchableOpacity>
-              <CustomButton label={I18n.t('createAccount')} onPress={handleSubmit} accessibilityLabel={'submit'} />
+              <CustomButton label={I18n.t('signUpButton')} onPress={handleSubmit} accessibilityLabel={'submit'} />
             </View>
           </View>
         )}

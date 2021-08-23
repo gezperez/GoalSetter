@@ -1,19 +1,48 @@
 import React from 'react'
-import { cleanup, render } from '@testing-library/react-native'
+import { fireEvent, render } from '@testing-library/react-native'
 
 import { Images } from '~/utils'
 import CustomInput from './CustomInput'
 
 describe('CustomInput', () => {
   afterEach(jest.resetAllMocks)
-  afterEach(cleanup)
 
   it('should render with required props', () => {
-    const { toJSON, getByLabelText } = render(
-      <CustomInput label="input" icon={Images.EMAIL} accessibilityLabel="button label" testID="button label" />
+    const mockOnChangeText = jest.fn()
+
+    const { toJSON, getByTestId } = render(
+      <CustomInput
+        label="input"
+        icon={Images.EMAIL}
+        accessibilityLabel="input"
+        testID="input"
+        onChangeText={mockOnChangeText}
+      />
     )
 
-    expect(getByLabelText('button label')).toBeDefined()
+    const input = getByTestId('input')
+
+    expect(input).toBeDefined()
+    expect(toJSON()).toMatchSnapshot()
+  })
+
+  it('should call onChangeText with expected string', () => {
+    const mockOnChangeText = jest.fn()
+
+    const { getByTestId, toJSON } = render(
+      <CustomInput
+        label="input"
+        icon={Images.EMAIL}
+        accessibilityLabel="input"
+        testID="input"
+        onChangeText={mockOnChangeText}
+      />
+    )
+
+    const input = getByTestId('input')
+    fireEvent.changeText(input, 'test')
+
+    expect(mockOnChangeText).toHaveBeenCalledWith('test')
     expect(toJSON()).toMatchSnapshot()
   })
 })

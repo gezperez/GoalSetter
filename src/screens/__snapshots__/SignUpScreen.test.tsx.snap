@@ -1,0 +1,435 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpScreen should render with Button component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "height": "100%",
+      },
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    contentContainerStyle={
+      Array [
+        undefined,
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "height": "100%",
+            "justifyContent": "space-between",
+            "paddingVertical": 20,
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderBottomColor": "#D2D2D2",
+                "borderBottomWidth": 0.5,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "marginHorizontal": 36,
+                "marginVertical": 16,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/person.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 16,
+                  "marginRight": 16,
+                  "resizeMode": "contain",
+                  "width": 16,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                collapsable={false}
+                nativeID="animatedComponent"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "color": "#D8D8D8",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 17,
+                    "lineHeight": 24,
+                    "top": 0,
+                  }
+                }
+              >
+                First Name
+              </Text>
+              <TextInput
+                accessibilityLabel="firstInput"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                returnKeyType="next"
+                style={
+                  Object {
+                    "color": "#00B7D5",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 19,
+                    "left": 0,
+                    "lineHeight": 22,
+                    "position": "absolute",
+                    "right": 0,
+                  }
+                }
+                value=""
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderBottomColor": "#D2D2D2",
+                "borderBottomWidth": 0.5,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "marginHorizontal": 36,
+                "marginVertical": 16,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/person.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 16,
+                  "marginRight": 16,
+                  "resizeMode": "contain",
+                  "width": 16,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                collapsable={false}
+                nativeID="animatedComponent"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "color": "#D8D8D8",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 17,
+                    "lineHeight": 24,
+                    "top": 0,
+                  }
+                }
+              >
+                Last Name
+              </Text>
+              <TextInput
+                accessibilityLabel="secondInput"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                returnKeyType="next"
+                style={
+                  Object {
+                    "color": "#00B7D5",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 19,
+                    "left": 0,
+                    "lineHeight": 22,
+                    "position": "absolute",
+                    "right": 0,
+                  }
+                }
+                value=""
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderBottomColor": "#D2D2D2",
+                "borderBottomWidth": 0.5,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "marginHorizontal": 36,
+                "marginVertical": 16,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/email.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 16,
+                  "marginRight": 16,
+                  "resizeMode": "contain",
+                  "width": 16,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                collapsable={false}
+                nativeID="animatedComponent"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "color": "#D8D8D8",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 17,
+                    "lineHeight": 24,
+                    "top": 0,
+                  }
+                }
+              >
+                Email Address
+              </Text>
+              <TextInput
+                accessibilityLabel="thirdInput"
+                keyboardType="email-address"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                returnKeyType="next"
+                style={
+                  Object {
+                    "color": "#00B7D5",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 19,
+                    "left": 0,
+                    "lineHeight": 22,
+                    "position": "absolute",
+                    "right": 0,
+                  }
+                }
+                value=""
+              />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "borderBottomColor": "#D2D2D2",
+                "borderBottomWidth": 0.5,
+                "flexDirection": "row",
+                "height": 50,
+                "justifyContent": "space-between",
+                "marginHorizontal": 36,
+                "marginVertical": 16,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "testUri": "../../../src/assets/images/lock.png",
+                }
+              }
+              style={
+                Object {
+                  "height": 16,
+                  "marginRight": 16,
+                  "resizeMode": "contain",
+                  "width": 16,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                collapsable={false}
+                nativeID="animatedComponent"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "color": "#D8D8D8",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 17,
+                    "lineHeight": 24,
+                    "top": 0,
+                  }
+                }
+              >
+                Password
+              </Text>
+              <TextInput
+                accessibilityLabel="fourthInput"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                returnKeyType="done"
+                style={
+                  Object {
+                    "color": "#00B7D5",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 19,
+                    "left": 0,
+                    "lineHeight": 22,
+                    "position": "absolute",
+                    "right": 0,
+                  }
+                }
+                value=""
+              />
+            </View>
+          </View>
+        </View>
+        <View>
+          <View
+            accessibilityLabel="terms button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="terms button"
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "Montserrat-Light",
+                  "fontSize": 14,
+                  "lineHeight": 16,
+                  "marginHorizontal": 25,
+                  "marginVertical": 20,
+                  "textAlign": "center",
+                }
+              }
+            >
+              By creating this account, I agree that I am a U.S. resident, 18 years or older with a valid bank account. I agree to Goalsetter’s 
+              <Text
+                numberOfLines={1}
+                style={
+                  Object {
+                    "color": "#17BFDD",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 14,
+                    "lineHeight": 16,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Terms of Services
+              </Text>
+              <Text>
+                .
+              </Text>
+            </Text>
+          </View>
+          <View
+            accessibilityLabel="submit"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#5FBA20",
+                "borderRadius": 5,
+                "justifyContent": "center",
+                "marginHorizontal": 50,
+                "opacity": 1,
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Montserrat-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 14,
+                }
+              }
+            >
+              CREATE FREE ACCOUNT
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
