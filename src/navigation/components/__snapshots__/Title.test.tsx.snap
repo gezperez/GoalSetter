@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title should render with non required props 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Bold",
+        "fontSize": 20,
+        "lineHeight": 23,
+      }
+    }
+  >
+    [missing "en.signUpHeaderTitle" translation]
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Light",
+        "fontSize": 14,
+        "lineHeight": 16,
+        "marginTop": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    [missing "en.signUpHeaderSubtitle" translation]
+  </Text>
+</View>
+`;
+
+exports[`Title should render with required props 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Montserrat-Bold",
+        "fontSize": 20,
+        "lineHeight": 23,
+      }
+    }
+  >
+    [missing "en.signUpHeaderTitle" translation]
+  </Text>
+</View>
+`;

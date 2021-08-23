@@ -23,6 +23,6 @@
     "skipLibCheck": true,
     "typeRoots": ["../../node_modules/@types", "node_modules/@types", "types"]
   },
-  "include": ["src", "**/*.test.ts", "**/*.test.tsx", "test"],
+  "include": ["src", "**/*.test.ts", "**/*.test.tsx", "test", "src/jest/react-native-i18n.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Background should render with required props 1`] = `
+<BVLinearGradient
+  colors={
+    Array [
+      4287440068,
+      4283436913,
+    ]
+  }
+  endPoint={
+    Object {
+      "x": 1,
+      "y": 0,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  style={
+    Array [
+      Object {
+        "width": 750,
+      },
+      Object {
+        "height": 100,
+      },
+    ]
+  }
+/>
+`;
