@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "clean": "yarn clean:android && yarn clean:ios && yarn clean:node-modules",
     "clean:android": "rm -rf android/build",
-    "clean:ios": "rm -rf android/build && rm -rf ios/Pods && rm -rf ~/Library/Developer/Xcode/DerivedData/igni*",
+    "clean:ios": "rm -rf android/build && rm -rf ios/Pods && rm -rf ~/Library/Developer/Xcode/DerivedData/goal_setter*",
     "clean:node-modules": "rm -rf node_modules",
     "start": "react-native start",
     "reverse": "adb reverse tcp:8081 tcp:8081; adb reverse tcp:9090 tcp:9090;",
